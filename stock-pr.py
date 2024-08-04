@@ -17,7 +17,7 @@ from sklearn.metrics import r2_score, mean_absolute_error
 
 
 
-st.title('Stock Price Prediction App')
+st.title('Stock Prediction App')
 def main():
     option = st.sidebar.selectbox('Make a choice', ['Visualize','Recent Data', 'Predict'])
     if option == 'Visualize':
@@ -148,7 +148,7 @@ def model_engine(model, num):
     preds = model.predict(x_test)
     st.text(f'r2_score: {r2_score(y_test, preds)} \
             \nMAE: {mean_absolute_error(y_test, preds)}')
-    # predicting stock price based on the number of days
+    # predicting stock based on the number of days
     forecast_pred = model.predict(x_forecast)
     day = 1
     for i in forecast_pred:
