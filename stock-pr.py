@@ -18,7 +18,6 @@ from sklearn.metrics import r2_score, mean_absolute_error
 
 
 st.title('Stock Price Prediction App')
-st.sidebar.info('Welcome to the Stock Price Prediction App. Choose your options below')
 def main():
     option = st.sidebar.selectbox('Make a choice', ['Visualize','Recent Data', 'Predict'])
     if option == 'Visualize':
